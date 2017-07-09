@@ -1,0 +1,18 @@
+<h1>
+  {{title}}
+</h1>
+
+
+<div class="container">
+  <div class="user-form">
+    <div class="input-field">
+      <input type="text" [(ngModel)]="user.userName">
+    </div>
+    <div class="input-field">
+      <input type="text" [(ngModel)]="user.firstName">
+    </div>
+    <div>
+      <button (click)="addUser()">Add User</button>
+    </div>
+  </div>
+</div>
