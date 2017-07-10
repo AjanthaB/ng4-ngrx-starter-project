@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
 // effects
 import { UserEffects } from '../store/user/user.effects';
 
-
 @NgModule({
   declarations: [
     AppComponent

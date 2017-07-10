@@ -13,11 +13,11 @@ import * as UserActions from '../store/user/user.actions';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Angular-4 ngrx starter project';
 
   public users: Observable<User[]>;
   public user: User = {
-    _id: '',
+    _id: '', // unique key for users
     firstName: '',
     lastName: ''
   };
@@ -27,7 +27,26 @@ export class AppComponent {
   }
 
   public addUser(): void {
-    console.log(this.user);
-    // this.store.dispatch(new UserActions.AddUser(this.user));
+    const id = '_id';
+    this.user[id] = this.randomId();
+    this.store.dispatch(new UserActions.AddUser(this.user));
+    this.setDefaultUser();
+  }
+
+  private setDefaultUser(): void {
+    this.user = {
+      _id: '', // unique key for users
+      firstName: '',
+      lastName: ''
+    };
+  }
+
+  private randomId(): string {
+    let text = '';
+    const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (let i = 0; i < 5; i++) {
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
   }
 }

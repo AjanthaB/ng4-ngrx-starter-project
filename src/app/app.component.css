@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    color: #409e81;
+}
+
+.container {
+    display: table;
+    margin: 0 auto;
+}
+
+.left-col {
+    float: left;
+}
+
+.right-col {
+    float: left;
+}
+
+.input-field {
+    padding: 5px;
+    height: 20px;
+}
+
+.add-btn {
+    text-align: center;
+}
+
+th, td {
+    padding: 0 10px;
+}

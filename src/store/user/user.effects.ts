@@ -18,6 +18,6 @@ export class UserEffects {
     .mergeMap((action: UserActions.AddUser) => {
       const increment$ = Observable.of(new UserActions.IncrementserCount());
       return increment$;
-      // here you can combine any number of action
+      // here you can combine any number of action  
     });
 }

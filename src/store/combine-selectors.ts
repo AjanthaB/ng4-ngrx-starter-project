@@ -17,5 +17,5 @@ export const getUsersAsArray = createSelector(getUserUsers,
      if (users == null) {
        return [];
      }
-     return users;
+     return Object.keys(users).map(userId => users[userId]);
   });
