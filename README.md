@@ -2,7 +2,7 @@
 
 ![ngrx-and-ng4](https://github.com/AjanthaB/ng4-ngrx-starter-project/blob/gh-pages/docs/img/ng4-ngrx.png)
 
-## This starter project is Angular-4 ngrx project which is configured to use multiple reducers and states.
+## This project is configured to use multiple **States** and **Reducers** with **Angular 4** and **ngrx** libraries.
 
 ## What is @ngrx/store ?
 
