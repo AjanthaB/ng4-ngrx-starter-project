@@ -8,9 +8,11 @@
 
 Ngrx/store is a Redux inspired library for Angular 2. It operates on many of the same concepts: actions, reducers, and a single store. The unique part here is that the DNA of ngrx/store is all about RXJS. Observables are at the heart of what makes ngrx/store tick.
 
-### This project is configured for use 
+### Packages 
 * **[@ngrx/effect](https://github.com/ngrx/store)** 
 * **[@ngrx/store](https://github.com/ngrx/effects)**
+* **[rxjs](http://reactivex.io/rxjs/)**
+* **[angularjs](https://angular.io/)**
 
 ## To run this project clone the project and run 
 ```javascript
