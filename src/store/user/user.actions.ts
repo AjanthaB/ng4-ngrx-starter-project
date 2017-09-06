@@ -28,7 +28,7 @@ export class IncrementserCount implements Action {
   public payload: null;
 }
 
-//  remove uses from state
+//  remove user from state
 export class RemoveUser implements Action {
   public type = ActionTypes.REMOVE_USER;
   public payload: User;
